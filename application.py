@@ -22,8 +22,6 @@ def homePage():
 def get_yt_data():
     if request.method == 'POST':
         try:            
-            # My Lambda API Url below 
-            api_url = 'https://8rkvysfczg.execute-api.us-east-1.amazonaws.com/yt_scrapper_utkarsh'
 
             # Keeping the url in dictionary format as below for API purpose
             content = request.form['content']                        
