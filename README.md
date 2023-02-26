@@ -1,6 +1,4 @@
-# yt_scrapper_aws Deployment by Utkarsh Gaikwad
-
-This is YouTube Scrapper headless Deployed on AWS by me - Utkarsh Gaikwad
+# YouTube Data Scrapper Deployment by Pavan
 
 # AWS Elastic Beanstalk Link
 
