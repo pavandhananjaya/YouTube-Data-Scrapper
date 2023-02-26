@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>YouTube Data Scrapper</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>YouTube Data Scrapper</h1>
+		<img src="{{url_for('static', filename='/Image/logo.png')}}" alt="Your Profile Picture" class="profile">
+		<div class="form">	
+		<form action="/YTdata" method="POST">			
+				<input type="text" name="content" id="content" placeholder="Enter YouTube Channel Link...">
+				<input type="submit" value="Search">
+		</form>
+		</div>
+	</div>
+</body>
+</html>

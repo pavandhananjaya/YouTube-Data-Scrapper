@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ channelName }}</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h1>{{ channelName }}</h1>
+		<table>
+    <thead>
+      <thead>
+        <tr>
+          {% for col in df.columns %}
+          <th>{{ col }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+    </thead>
+    <tbody>
+      {% for index, row in df.iterrows() %}
+      <tr>
+        {% for col, value in row.items() %}
+        {% if loop.index > 3 %}
+        <td><a href="{{ value }}">{{ value }}</a></td>
+        {% else %}
+        <td>{{ value }}</td>
+        {% endif %}
+        {% endfor %}
+      </tr>
+      {% endfor %}
+     </tbody>
+  </table>		
+	</div>
+</body>
+</html>
